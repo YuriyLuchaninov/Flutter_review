@@ -1,49 +1,173 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Flutter</title>
+    <title>Flutter</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="assets/css/custom.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal dark-bg">
+    <div class="slides">
+        <!-- Slide 1 -->
+        <section>
+            <h1>Flutter</h1>
+            <h4><span class="eng notify">"Silver Bullet"</span> <span>мобильной разработки</span></h4>
+            <p>
+                <br>
+                Юрий Лучанинов / <a href="https://mobidev.biz/" class="eng">mobidev.biz</a>
+            </p>
+            <p>
+                <small><a href="mailto:y.luchaninov@mobidev.biz" target="_top">y.luchaninov@mobidev.biz</a></small>
+            </p>
+        </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <!-- Slide 2 -->
+        <section>
+            <div style="position:relative">
+                <p class="fragment fade-out"
+                   style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+                   data-fragment-index="0">
+                    <span>Миссия: <span class="eng green">"Build the best way to develop for mobile"</span></span>
+                </p>
+                <p class="fragment fade-in"
+                   style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+                   data-fragment-index="0">
+                    <span>Позиция: <span class="eng blue">"Build beautiful native apps in record time"</span></span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section>
+            <h3>Предистория</h3>
+            <ul style="font-size: 32px;">
+                <li><span class="green">Цель: </span>создать браузер без лагов и с гладкой анимацией.</li>
+                <li><span class="warning">Исполнители: </span>Команда разработчиков Хром.</li>
+                <li>
+                    <spun class="blue">Инструмент:</spun>
+                    эксперимент - “давайте отбросим все что связывает нас с вебом”
+                </li>
+                <li><span class="green">Результат: </span>в 20 раз быстрее хрома</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4 -->
+        <section>
+            <div style="position:relative">
+                <p class="fragment fade-out"
+                   style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+                   data-fragment-index="0">
+                    <span>Так что все таки такое флаттер?</span>
+                </p>
+                <p class="fragment fade-in"
+                   style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;"
+                   data-fragment-index="0">
+                    <span>is Google’s mobile app SDK for crafting high-quality native interfaces on iOS and Android in record time.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section>
+            <h3>“Build the best way to develop for mobile”:</h3>
+            <ul style="font-size: 32px;">
+                <li>Одна команда разработки под любую OS</li>
+                <li>Фитчу делать один раз, и она должна выглядеть идеально и как хочет дизайнер и как ожидает клиент, а
+                    не как может разработчик!
+                </li>
+                <li>
+                    Кастомизация должна быть легкой и гибкой
+                </li>
+                <li>Девелопмент цикл должен быть меньше секунды</li>
+            </ul>
+        </section>
+
+        <!-- Slide 6 -->
+        <section>
+            <h3>Чем это решаеться:</h3>
+            <ul style="font-size: 32px;">
+                <li>Архитектура платформы</li>
+                <li>Язык разработки</li>
+                <li>
+                    <span>Специфика разработки:</span>
+                    <ul>
+                        <li>Виджеты</li>
+                        <li>Hot Reload</li>
+                        <li>Реактивность во всем</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Slide 7 -->
+        <section>
+            <h3>Архитектура нативных приложений:</h3>
+            <img width="524" height="309" data-src="assets/img/native.png" alt="" class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 8 -->
+        <section>
+            <h3>Архитектура PhoneGap приложений:</h3>
+            <img width="631" height="310" data-src="assets/img/phonegap.png" alt="" class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 9 -->
+        <section>
+            <h3>ReactNative|NativeScript:</h3>
+            <img width="630" height="301" data-src="assets/img/RN.png" alt="" class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 10 -->
+        <section>
+            <h3>Flutter:</h3>
+            <img width="628" height="304" data-src="assets/img/flutter.png" alt="" class="noborder vertical-block">
+        </section>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide',
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
