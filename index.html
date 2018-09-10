@@ -141,6 +141,260 @@
             <img width="628" height="304" data-src="assets/img/flutter.png" alt="" class="noborder vertical-block">
         </section>
 
+        <!-- Slide 11 -->
+        <section>
+            <h3>Чем же хорош Dart:</h3>
+            <ul style="font-size: 32px;">
+                <li>JIT для девелопмента, ahead of time compiled для продакшена</li>
+                <li>Опциональная строгая типизация</li>
+                <li>Стримы</li>
+                <li>Tree shaking compiler (dead code removal)</li>
+                <li>Прогрессивный GC, работа в бекграунде</li>
+                <li>Легкость в изучении</li>
+                <li>Покрывает весь стек платформы</li>
+            </ul>
+        </section>
+
+        <!-- Slide 12 -->
+        <section>
+            <h5>Причем здесь Стримы?:</h5>
+            <h3>Business Logic Components (BLoC)</h3>
+            <img width="561" height="331" data-src="assets/img/bloc.png" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+
+        <!-- Slide 13 -->
+        <section>
+            <h3>Специфика разработки:</h3>
+            <h1>Все виджеты!</h1>
+        </section>
+
+        <!-- Slide 14 -->
+        <section>
+            <h3>То есть абсолютно все:</h3>
+            <img width="564" height="380" data-src="assets/img/widget_example.png" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 15 -->
+        <section>
+            <h3>UI это код!:</h3>
+            <img width="800" height="335" data-src="assets/img/uiascode.png" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 16 -->
+        <section>
+            <h3>Реактивность из коробки:</h3>
+            <h1>Все immutable!</h1>
+        </section>
+
+        <!-- Slide 17 -->
+        <section>
+            <h3>Три вида виджетов:</h3>
+            <ul style="font-size: 32px;">
+                <li>Stateless Widget</li>
+                <li>Stateful Widget</li>
+                <li>Inherited widget</li>
+            </ul>
+        </section>
+
+        <!-- Slide 18 -->
+        <section>
+            <h3>Что решает такой подход к виджетам:</h3>
+            <ul style="font-size: 32px;">
+                <li>Виджет это функция композиции - поэтому вложенность не важна</li>
+                <li>Любая кастомизация - любой дизайн</li>
+                <li>Вы контролируете каждый пиксель на скрине, в отличие от OEM виджетов</li>
+                <li>Вы пишете такой UI как хотите, а не такой как можете наверстать</li>
+            </ul>
+        </section>
+
+        <!-- Slide 19 -->
+        <section>
+            <h3>Специфика разработки:</h3>
+            <h1>Hot reload!</h1>
+        </section>
+
+        <!-- Slide 20 -->
+        <section>
+            <h3>Hot reload:</h3>
+            <img width="876" height="522" data-src="assets/img/hot-reload.gif" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 21 -->
+        <section>
+            <h3>Почему это важно:</h3>
+            <img width="683" height="389" data-src="assets/img/hot.png" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 22 -->
+        <section>
+            <h3>На чем это технически реализовано:</h3>
+            <ul style="font-size: 32px;">
+                <li>Dart</li>
+                <li>Immutable widgets</li>
+            </ul>
+        </section>
+
+        <!-- Slide 23 -->
+        <section>
+            <div>When hot reload is invoked, the host machine looks at the edited code since the last compilation. The
+                following libraries are recompiled:
+            </div>
+            <ul style="font-size: 32px;">
+                <li>Any libraries with changed code</li>
+                <li>The application’s main library</li>
+                <li>The libraries from the main library leading to affected libraries</li>
+                <li>In Dart 2, those libraries’ Dart source code are turned into kernel files and sent to the mobile
+                    device’s Dart VM
+                </li>
+                <li>The Dart VM re-loads all libraries from the new kernel file. So far no code is re-executed</li>
+                <li>The hot reload mechanism then causes the Flutter framework to trigger a rebuild/re-layout/repaint of
+                    all existing widgets and render objects
+                </li>
+            </ul>
+        </section>
+
+        <!-- Slide 24 -->
+        <section>
+            <h3>Зачем: уменьшение общего времени разработки более чем на 30%!</h3>
+            <img width="635" height="387" data-src="assets/img/dev.png" alt=""
+                 class="noborder vertical-block">
+        </section>
+
+        <!-- Slide 25 -->
+        <section>
+            <h3>А что по поводу перформанса?:</h3>
+            <div>An app’s performance is determined by more than one measure. Performance sometimes refers to raw speed,
+                but also to the UI’s smoothness and lack of stutter. Other examples of performance include I/O or
+                network speed. This page primarily focuses on the second type of performance (UI smoothness), but you
+                can use most of the same tools to diagnose other performance problems.
+            </div>
+        </section>
+
+        <!-- Slide 26 -->
+        <section>
+            <h3>Что еще нужно знать о Flutter:</h3>
+            <ul style="font-size: 32px;">
+                <li>DartPub</li>
+                <li>Threads</li>
+                <li>Native pipes</li>
+                <li>Existing native apps</li>
+                <li>Fuchsia</li>
+                <li>Desktop</li>
+            </ul>
+        </section>
+
+        <!-- Slide 27 -->
+        <section>
+            <h3>Что мы пробовали:</h3>
+            <div>
+                <div style="display: inline-block">
+                    <video data-autoplay width="300" height="600" id="video">
+                        <source src="assets/video/demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div style="width: 50px; display: inline-block"></div>
+                <div style="display: inline-block">
+                    <video data-autoplay width="300" height="600" id="video2">
+                        <source src="assets/video/sportik.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Slide 28 -->
+        <section>
+            <h3>Что понравилось во Flutter:</h3>
+            <ul style="font-size: 32px;">
+                <li>Hot Reload !!!</li>
+                <li>Всегда работает одинаково и на иосе и на андроиде</li>
+                <li>Потрясающая документация</li>
+                <li>Божественная кастомизация</li>
+                <li>Оень высокое качество компонентов и документации</li>
+                <li>Анализ пакетов в Dart Pub</li>
+                <li>опциональная строгая типизация</li>
+            </ul>
+        </section>
+
+        <!-- Slide 29 -->
+        <section>
+            <h3>Что не понравилось во Flutter:</h3>
+            <ul style="font-size: 32px;">
+                <li>Dart все таки другой язык, надо привыкнуть</li>
+                <li>В репозиторий надо класть платформо зависимые файлы</li>
+                <li>Сериализация</li>
+            </ul>
+        </section>
+
+        <!-- Slide 30 -->
+        <section>
+            <h3>На что обратить внимание во Flutter:</h3>
+            <ul style="font-size: 32px;">
+                <li>внимательно подбирать версии пакетов</li>
+                <li>комманды флаттера, например `flutter clean`</li>
+                <li>поля класса данных и виджета - `final`</li>
+                <li>`import 'package:my_aa/my_model.dart';` и `import './my_model.dart';`</li>
+                <li>три типа виджетов: StatelessWidget, StateFullWidget, InheritedWidget</li>
+            </ul>
+        </section>
+
+        <!-- Slide 31 -->
+        <section>
+            <h3>Что не делать ни в коем случае во Flutter:</h3>
+            <ul style="font-size: 32px;">
+                <li>Мутировать виджеты</li>
+                <li>Лезть в external libraries</li>
+                <li>Не переименовывать деректорию проекта</li>
+            </ul>
+        </section>
+
+        <!-- Slide 32 -->
+        <section>
+            <h3>Что прийдеться сделать:</h3>
+            <ul style="font-size: 32px;">
+                <li>Учить Dart</li>
+                <li> Учить BLoC паттерн, streams & RX</li>
+            </ul>
+        </section>
+
+        <!-- Slide 33 -->
+        <section>
+            <h3>Готов ли флаттер к продакшену?</h3>
+            <ul style="font-size: 32px;">
+                <li>Один баг платформы на 2 проектах</li>
+                <li>Карты, экстернал виджеты</li>
+                <li>90% - бизнес приложений</li>
+            </ul>
+        </section>
+
+        <!-- Slide 34 -->
+        <section>
+            <h3>Все что надо знать о Flutter</h3>
+            <ul style="font-size: 32px;">
+                <li>Отсутствие необходимости полишинга и оптимизации перформанса</li>
+                <li>Продуктивсность девелопера</li>
+            </ul>
+        </section>
+
+        <!-- Slide 35 -->
+        <section>
+            <h3>Литература</h3>
+            <ul style="font-size: 32px;">
+                <li>https://flutter.io/</li>
+                <li>https://github.com/Solido/awesome-flutter</li>
+                <li>https://medium.com/flutter-io/build-reactive-mobile-apps-in-flutter-companion-article-13950959e381
+                </li>
+                <li>https://www.youtube.com/channel/UCtWyVkPpb8An90SNDTNF0Pg</li>
+            </ul>
+        </section>
+
+
     </div>
 </div>
 
@@ -156,6 +410,7 @@
         progress: true,
         history: true,
         center: true,
+        loop: true,
         transition: 'slide',
         dependencies: [
             {src: 'plugin/markdown/marked.js'},
