@@ -27,7 +27,7 @@
 }
 
 /*new theme*/
-html body .reveal div{
+html body .reveal div {
     /*background: #f5f3f1 !important;*/
     /*background-color: #f5f3f1 !important;*/
 }
@@ -79,4 +79,21 @@ html body .reveal div{
 
 pre {
     width: 900px;
+}
+
+.custom-code {
+    color: #ffc000;
+    font-weight: lighter !important;
+}
+
+.custom-center {
+    position: absolute !important;
+    float: left !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.underline {
+    text-decoration: underline;
 }
