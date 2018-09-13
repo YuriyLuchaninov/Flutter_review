@@ -97,3 +97,27 @@ pre {
 .underline {
     text-decoration: underline;
 }
+
+.reveal .footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 48px;
+    width: 100%;
+    color: white;
+    font-weight: 600 !important;
+    font-size: 0;
+}
+
+.reveal .footer div {
+    font-size: 18px;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 14px;
+    box-sizing: border-box;
+    visibility: hidden;
+}
